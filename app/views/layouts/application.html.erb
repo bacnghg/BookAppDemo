@@ -7,12 +7,12 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
-
   <body>
-  <a href="/pages/about">About</a>
-	<a href="/pages/contact">Contact</a>
+	<%= render 'layouts/header' %>	
+  <div class= "container">
     <%= yield %>
-	<p>Copyright 2016 by Nguyen Hoang Bac and Ruby on Rails</p>
+  	
+  <%= render 'layouts/footer' %>
+  </div>
   </body>
 </html>
